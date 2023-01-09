@@ -19,7 +19,7 @@ require 'stringio'
 
 def miniMaxSum(arr)
     sorted_arr = arr.sort
-    max_index = arr.size - 1
+    max_index = sorted_arr.size - 1
     
     min_sum = sorted_arr[0..max_index - 1].sum
     max_sum = sorted_arr[1..max_index].sum
